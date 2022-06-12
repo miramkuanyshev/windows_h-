@@ -1,0 +1,51 @@
+.header {
+    height: 65px
+}
+
+.containers {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    margin-left: 27px;
+
+    &-item {
+        margin-right: 27px;
+    }
+}
+.link {
+    color: #000000;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+
+    &-measuring {
+        height: 40px;
+        width: 169px;
+        background-color: #EF7F04;
+        border-radius: 3px;
+        font-size: 13px;
+        color: #FFFFFF;
+        padding: 10 15;
+        margin-right: 14px;
+    }
+    &-calculation {
+        height: 40px;
+        width: 169px;
+        background-color: #3B3A63;
+        border-radius: 3px;
+        font-size: 13px;
+        color: #FFFFFF;
+        padding: 10 15;
+    }
+}
