@@ -3,7 +3,7 @@
 }
 
 .containers {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -39,6 +39,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: none;
+  outline: none;
 }
 
 .buttons-measuring {
@@ -50,6 +52,8 @@
   color: #FFFFFF;
   padding: 10 15;
   margin-right: 14px;
+  border: none;
+  outline: none;
 }
 
 .buttons-calculation {
@@ -60,5 +64,99 @@
   font-size: 13px;
   color: #FFFFFF;
   padding: 10 15;
+  border: none;
+  outline: none;
+}
+
+.services {
+  background-color: #f2f2f2;
+  padding-top: 70px;
+}
+
+.services-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services-card__item {
+  width: 45%;
+  border-radius: 3px;
+  margin-bottom: 25px;
+  padding: 55px 0px 38px 50px;
+}
+
+.services-card__item_bg-window {
+  background-image: url(../images/services-img/window.png);
+  background-size: cover;
+}
+
+.services-card__item_bg-loggia {
+  background-image: url(../images/services-img/loggia.png);
+  background-size: cover;
+}
+
+.services-card__item_bg-cottege {
+  background-image: url(../images/services-img/cottage.png);
+  background-size: cover;
+}
+
+.services-card__item_bg-corporation {
+  background-image: url(../images/services-img/corparation.png);
+  background-size: cover;
+}
+
+.services-card__item .card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-card__item .card__header-title {
+  width: 211px;
+  height: 56px;
+  margin-left: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2F2F51;
+}
+
+.services-card__item .card__header-title_corporation {
+  width: 299px;
+  height: 56px;
+}
+
+.services-card__item .card__description {
+  margin-top: 35px;
+  width: 303px;
+  height: 75.25px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2F2F51;
+}
+
+.title-sections {
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2F2F51;
+  margin-bottom: 70px;
 }
 /*# sourceMappingURL=style.css.map */
