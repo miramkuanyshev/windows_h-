@@ -3,7 +3,7 @@
 }
 
 .containers {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -28,6 +28,8 @@
 
 .buttons {
     display: flex;
+    border: none;
+    outline: none;
 
     &-measuring {
         height: 40px;
@@ -38,6 +40,8 @@
         color: #FFFFFF;
         padding: 10 15;
         margin-right: 14px;
+        border: none;
+        outline: none;
     }
     &-calculation {
         height: 40px;
@@ -47,5 +51,94 @@
         font-size: 13px;
         color: #FFFFFF;
         padding: 10 15;
+        border: none;
+        outline: none
     }
 }
+
+.services {
+    background-color: #f2f2f2;
+    padding-top: 70px;
+
+    &-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        &__item {
+            width: 45%;
+            border-radius: 3px;
+            margin-bottom: 25px;
+            padding: 55px 0px 38px 50px;
+
+            &_bg-window {
+                background-image: url(../images/services-img/window.png);
+                background-size: cover;
+            }
+            
+            &_bg-loggia {
+                background-image: url(../images/services-img/loggia.png);
+                background-size: cover;
+            }
+
+            &_bg-cottege {
+                background-image: url(../images/services-img/cottage.png);
+                background-size: cover;
+            }
+
+            &_bg-corporation {
+                background-image: url(../images/services-img/corparation.png);
+                background-size: cover;
+            }
+
+        
+        .card__header {
+            display: flex;
+            align-items: center; 
+            
+            &-title {
+                width: 211px;
+                height: 56px;
+                margin-left: 20px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                color: #2F2F51;
+                
+                &_corporation {
+                    width: 299px;
+                    height: 56px;
+                }
+            }
+            } 
+        .card__description {
+            margin-top: 35px;
+            width: 303px;
+            height: 75.25px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #2F2F51;
+        }       
+        }
+        
+    }
+}
+
+.title-sections {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2F2F51;
+    margin-bottom: 70px;
+
+}
+
+
