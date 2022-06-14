@@ -17,7 +17,7 @@
     display: flex;
     margin-left: 27px;
 
-    &-item {
+    &__item {
         margin-right: 27px;
     }
 }
@@ -31,7 +31,7 @@
     border: none;
     outline: none;
 
-    &-measuring {
+    &__measuring {
         height: 40px;
         width: 169px;
         background-color: #EF7F04;
@@ -43,7 +43,7 @@
         border: none;
         outline: none;
     }
-    &-calculation {
+    &__calculation {
         height: 40px;
         width: 169px;
         background-color: #3B3A63;

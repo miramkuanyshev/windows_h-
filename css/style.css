@@ -26,7 +26,7 @@
   margin-left: 27px;
 }
 
-.navigation-item {
+.navigation__item {
   margin-right: 27px;
 }
 
@@ -43,7 +43,7 @@
   outline: none;
 }
 
-.buttons-measuring {
+.buttons__measuring {
   height: 40px;
   width: 169px;
   background-color: #EF7F04;
@@ -56,7 +56,7 @@
   outline: none;
 }
 
-.buttons-calculation {
+.buttons__calculation {
   height: 40px;
   width: 169px;
   background-color: #3B3A63;
