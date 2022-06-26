@@ -241,10 +241,6 @@ body {
   margin: 0 auto;
 }
 
-.preview-info__argument {
-  margin-right: 52px;
-}
-
 .preview-info .argument-advantage {
   display: -webkit-box;
   display: -ms-flexbox;
