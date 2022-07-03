@@ -1,11 +1,16 @@
 body {
   font-family: 'Roboto';
   font-style: normal;
+  background-color: #f2f2f2;
 }
 
 .containers {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.header {
+  background-color: #FFFFFF;
 }
 
 .header-block {
@@ -20,14 +25,14 @@ body {
           align-items: center;
 }
 
-.navigation {
+.header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 27px;
 }
 
-.navigation__item {
+.header .navigation__item {
   margin-right: 27px;
 }
 
@@ -47,13 +52,11 @@ body {
 .buttons__measuring {
   font-family: 'Roboto';
   font-style: normal;
-  height: 40px;
-  width: 169px;
   background-color: #EF7F04;
   border-radius: 3px;
   font-size: 13px;
   color: #FFFFFF;
-  padding: 10 15;
+  padding: 10px 30px 10px 14px;
   margin-right: 14px;
   border: none;
   outline: none;
@@ -62,19 +65,20 @@ body {
 .buttons__calculation {
   font-family: 'Roboto';
   font-style: normal;
-  height: 40px;
-  width: 169px;
+  padding: 10px 30px 10px 14px;
   background-color: #3B3A63;
   border-radius: 3px;
   font-size: 13px;
   color: #FFFFFF;
-  padding: 10 15;
   border: none;
   outline: none;
 }
 
+.buttons__icon {
+  margin-right: 14px;
+}
+
 .services {
-  background-color: #f2f2f2;
   padding-top: 70px;
 }
 
@@ -164,9 +168,7 @@ body {
 }
 
 .product {
-  background-color: #f2f2f2;
   padding-top: 70px;
-  margin-bottom: 50px;
 }
 
 .product-navigation {
@@ -387,5 +389,94 @@ body {
   position: absolute;
   top: 370px;
   left: -86px;
+}
+
+.warranty {
+  margin-top: 50px;
+}
+
+.warranty-quality {
+  background-image: url(../images/product/warranty_background.png);
+  background-blend-mode: multiply;
+  background-color: #2F2F51;
+  background-size: cover;
+}
+
+.warranty-quality__header {
+  display: block;
+  margin: 0 auto;
+  padding: 50px 0px 50px 0px;
+}
+
+.warranty-quality__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.warranty .content-block {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.warranty .content-block__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.warranty .content-block__description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.warranty .content-block__description_one {
+  padding: 44px 28px 89px 42px;
+}
+
+.warranty .content-block__description_two {
+  padding: 59px 28px 89px 20px;
+}
+
+.warranty .content-block__description_three {
+  padding: 65px 20px 89px 20px;
+}
+
+.warranty .content-block__description_four {
+  padding: 48px 0px 70px 0px;
+}
+
+.warranty .content-block__description_five {
+  padding: 46px 70px 10px 50px;
+}
+
+.warranty-button {
+  padding-top: 56px;
+  padding-bottom: 95px;
+}
+
+.warranty-button__calculation {
+  font-family: 'Roboto';
+  font-style: normal;
+  padding: 18px 54px 18px 34px;
+  background-color: #3B3A63;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.warranty-button__img {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */
