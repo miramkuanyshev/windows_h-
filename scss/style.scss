@@ -7,6 +7,10 @@ body {
 .containers {
     max-width: 1200px;
     margin: 0 auto;
+
+    @media screen and (max-width: 992px) {
+        max-width: 880px;
+    }
 }
 
 .header {
@@ -16,11 +20,29 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: 992px) {
+            justify-content: space-between;
+        }
+
+
+        .burger__icon {
+            display: none;
+
+            @media screen and (max-width: 992px) {
+                display: inline;
+                margin-right: 44px;
+            }
+        }
     }
 
     .navigation {
         display: flex;
         margin-left: 27px;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
 
         &__item {
             margin-right: 27px;
@@ -78,11 +100,19 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
 
+        @media screen and (max-width: 992px) {
+            justify-content: center;
+        }
+
         &__item {
             width: 45%;
             border-radius: 3px;
             margin-bottom: 25px;
             padding: 55px 0px 38px 50px;
+
+            @media screen and (max-width: 992px) {
+                width: 60%;
+            }
 
             &_bg-window {
                 background-image: url(../images/services-img/window.png);
@@ -224,6 +254,13 @@ body {
         width: 80%;
         margin: 0 auto;
 
+        .argument {
+            @media screen and (max-width: 992px) {
+                width: 67%;
+            }
+
+        }
+
         .argument-advantage {
             display: flex;
             align-items: baseline;
@@ -287,6 +324,10 @@ body {
         padding: 43px 40px 65px 40px;
         box-sizing: border-box;
         position: relative;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
 
         &__title {
             font-weight: 700;
