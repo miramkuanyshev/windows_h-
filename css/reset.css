@@ -364,5 +364,7 @@ textarea {
     padding: 0.2em 0;
 }
 a {
+    text-decoration: none;}
+li{
     text-decoration: none;
 }
