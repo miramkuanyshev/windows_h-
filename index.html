@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заголовок сайта</title>
+    <title>Окна Хаус</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -18,7 +18,18 @@
             <div class="header-block">
                 <div class="header-block__menu menu ">
                     <div class="menu-burger">
-                        <span class="menu-burger__item"></span>
+                        <input type="checkbox" id="menu__toggle">
+                        <label class="menu-btn" for="menu__toggle">
+                            <span class="menu-burger__item"></span>
+                        </label>
+                        <ul class="menu__box">
+                            <li class="menu__item"><a class="link-burger" href="#services">Услуги</a></li>
+                            <li class="menu__item"><a class="link-burger" href="#product">Продукция</a></li>
+                            <li class="menu__item"><a class="link-burger" href="#about">О компании</a></li>
+                            <li class="menu__item"><a class="link-burger" href="#portfolio">Портфолио</a></li>
+                            <li class="menu__item"><a class="link-burger" href="#questions">Вопрос-ответ</a></li>
+                            <li class="menu__item"><a class="link-burger" href="#contacts">Контакты</a></li>
+                        </ul>
                     </div>
                     <div class="menu__icon">
                         <img src="./images/header/logo.svg" alt="Логотип компании">
@@ -30,9 +41,9 @@
                         <li class="navigation__item"><a class="link" href="#services">Услуги</a></li>
                         <li class="navigation__item"><a class="link" href="#product">Продукция</a></li>
                         <li class="navigation__item"><a class="link" href="#about">О компании</a></li>
-                        <li class="navigation__item"><a class="link" href="">Портфолио</a></li>
-                        <li class="navigation__item"><a class="link" href="">Вопрос-ответ</a></li>
-                        <li class="navigation__item"><a class="link" href="">Контакты</a></li>
+                        <li class="navigation__item"><a class="link" href="#portfolio">Портфолио</a></li>
+                        <li class="navigation__item"><a class="link" href="#questions">Вопрос-ответ</a></li>
+                        <li class="navigation__item"><a class="link" href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="buttons">
@@ -346,7 +357,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2 class="title-sections">Портфолио</h2>
             <div class="portfolio-content">
                 <img src="./images/portfolio/portfolio_one.png" alt="Фото для портфолио"
@@ -359,7 +370,7 @@
                     class="portfolio-content__pictures">
             </div>
         </section>
-        <section class="containers">
+        <section class="containers" id="questions">
             <div class="answer">
                 <h2 class="answer__title">Вопрос-ответ</h2>
                 <div class="answer__question question">
@@ -397,7 +408,7 @@
 
             </div>
         </section>
-        <section class="containers">
+        <section class="containers" id="contacts">
             <h2 class="title-sections">Контакты</h2>
             <div class="contacts">
                 <div class="contacts-info">
