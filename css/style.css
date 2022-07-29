@@ -51,15 +51,20 @@ body {
   width: 56px;
   height: 7px;
   background-color: #EF7F1A;
-  margin-top: 30px;
+  margin-top: 10px;
   position: relative;
+  z-index: 2;
 }
 
 @media screen and (max-width: 992px) {
   .menu-burger__item {
     display: block;
     margin-right: 15px;
+    transition-duration: .25s;
   }
+}
+#menu__toggle {
+  opacity: 0;
 }
 
 .menu-burger__item::after {
@@ -69,6 +74,7 @@ body {
   background-color: #EF7F1A;
   position: absolute;
   top: 15px;
+  transition-duration: .25s;
 }
 
 .menu-burger__item::before {
@@ -78,7 +84,50 @@ body {
   background-color: #EF7F1A;
   position: absolute;
   bottom: 15px;
+  transition-duration: .25s;
 }
+
+.menu__box {
+  position: fixed;
+  top: 0px;
+  width: 200px;
+  height: 25%;
+  background-color: #f2f2f2;
+  margin-left: -45px;
+  border-radius: 3px;
+  padding: 63px 0px 0px 55px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  z-index: 1;
+  visibility: hidden;  
+}
+.link-burger {
+  padding: 5px 5px;
+  color: #2F2F51;
+  border-radius: 3px;
+}
+
+.link-burger:hover {
+  color: #E2E2E2;
+  background-color: #EF7F1A;
+}
+
+#menu__toggle:checked ~ .menu-btn > .menu-burger__item {
+  transform: rotate(45deg);
+  position: fixed;
+ }  
+ #menu__toggle:checked ~ .menu-btn > .menu-burger__item::after{
+  top: 0px;
+ }
+ #menu__toggle:checked ~ .menu-btn > .menu-burger__item::before {
+  bottom: 0px;
+  transform: rotate(90deg);
+ }
+ #menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+ }
+
 
 .header .navigation {
   display: -webkit-box;
@@ -895,6 +944,20 @@ body {
 .question-block__title:hover {
   color: #EF7F1A;
 }
+
+.question-block__title:hover .arrow::after,
+.question-block__title:hover .arrow::before {
+  background-color: #EF7F04;
+}
+
+.question-block[open] .arrow::after {
+  transform: rotate(229deg);
+}
+
+.question-block[open] .arrow::before {
+  transform: rotate(316deg);
+}
+
 
 .contacts {
   display: -webkit-box;
